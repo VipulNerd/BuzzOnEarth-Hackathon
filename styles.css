@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.image {
+    width: 100%;
+    height: 500px;
+
+}
+
+h1 {
+    margin: 70px;
+    text-align: center;
+}
+
+h2,
+h3 {
+    margin: 50px;
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+
+.dash {
+    margin-right: 50px;
+    float: inline-end;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+
+.dash:hover {
+    background-color: white;
+    color: #4CAF50;
+    transform: scale(1.5);
+}
+
+/* Header */
+header {
+    background: #3a6e39;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    float: inline-start;
+    margin: 0px 50px 30px 10px;
+    transform: scale(1);
+    transition: transform 0.2s;
+    color: #f4f4f4;
+}
+
+nav ul li:hover {
+    transform: scale(1.5);
+
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('urban-farms.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+}
+
+/* Features Section */
+.features {
+    padding: 2em;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #4CAF50;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+/* How It Works Section */
+.steps {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.step {
+    background-color: #4CAF50;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+/* Data Sources & AI Models */
+.two-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.column {
+    background-color: #4CAF50;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tools & Technology */
+.tools-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.tool {
+    background-color: #4CAF50;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact Form */
+.contact form {
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 15px;
+}
+
+#sub {
+    background-color: #4CAF50;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+}
