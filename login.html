@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Urban Agriculture Optimization</title>
+    <link rel="stylesheet" href="styleslogin.css">
+</head>
+
+<body>
+
+    <script>
+        document.getElementById('signup').addEventListener('submit', function (e) {
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirm-password').value;
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert("Passwords do not match!");
+            }
+        });
+    </script>
+
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#datasources">Data Sources</a></li>
+                <li><a href="#aimodels">AI Models</a></li>
+                <li><a href="#tools">Tools & Tech</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Sign Up for Full Access</h1>
+    </header>
+
+    <!-- Sign-Up Section -->
+    <section class="signup-form">
+        <h2>Create Your Account</h2>
+        <p>Join our platform and gain access to AI-powered urban agriculture insights.</p>
+
+        <form id="signup" action="/submit-signup" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password"
+                required>
+
+            <label for="company">Company/Institution:</label>
+            <input type="text" id="company" name="company" placeholder="Enter your company or institution" required>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> I agree to the <a href="#">terms and
+                    conditions</a>
+            </label>
+
+            <button type="submit" class="cta-button">Sign Up</button>
+        </form>
+
+        <p>Already have an account? <a href="#">Log in here</a>.</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Urban Agriculture Optimization. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
