@@ -74,6 +74,19 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Urban Agriculture Optimization. All rights reserved.</p>
+        <div></div>
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fa fa-moon-o"></i>
+                <i class="fa fa-sun-o"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
+        <script>const checkbox = document.getElementById("checkbox");
+            checkbox.addEventListener("change", () => {
+                document.body.classList.toggle("dark");
+            });
+        </script>
     </footer>
 
 </body>
